@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teen Magazine</title>
+     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link href="https://fonts.googleaois.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+   
+     <link rel="stylesheet" type="text/css" href="homepage.css">
+  
+    
+    </head>
+
+<body a link="#808080" vlink="#808080">
+    <div class="wrapper">
+    
+        <header>
+            <nav>
+            
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+                </div>
+            <div class="logo">
+                TEEN MAGAZINE
+                </div>
+                <div class="menu">
+                    <ul>
+                    
+                        
+                        <font size="4">  <a href="homepage.html">Home</a>
+                        <a href="men.html">Men</a>
+                        <a href="women.html">Women</a>
+                        <a href="contact-us.html">Contact</a>
+                        <a href="about-us.html">About</a>
+                        <a href="sign%20in.html">login</a></font>
+                    
+                    </ul>
+                    
+                </div>
+                
+                
+            </nav>
+          
+        
+        </header>
+       
+        <h4><span> The Lates</span></h4>
+        
+        <div class="imgcontainer">
+            <div class="images">
+                <img src="images/GettyImages-1149708274-480x320-c-top.jpg">
+                <div class="desc"> All the culture you need is here</div>
+            
+            </div>
+               <div class="images">
+                <img src="images/fashion-news-march-14-hold-480x320-c-top.png">
+                <div class="desc"> Here is the latest from the fashion world</div>
+            
+            </div>
+               <div class="images">
+                <img src="images/Mulberry-Lo-F17-153b-480x480-c-top.jpg">
+                <div class="desc"> The brand announced the news in a statement today</div>
+            
+            </div>
+               <div class="images">
+                <img src="images/Screen-Shot-2020-03-16-at-3.03.12-PM-346x346-c-top.png">
+                <div class="desc"> The collection blurs the line between beauty and fashion</div>
+            
+            </div>
+               <div class="images">
+               <img src="images/TANYA_TAYLOR_R20T741102_PAJAMA_SCROLLY_FLORAL_02_7fbf608f-ade9-4f70-8657-e25015a5f0fa_1800x1800-480x480-c-top.jpg">
+                <div class="desc"> Accessories Made From Salvaged Fabric to Buy Now</div>
+            
+            </div>
+               <div class="images">
+              <img src="images/vsp-mens-hold-480x480-c-top.jpg">
+                <div class="desc"> VSP Consignment Debuts Menswear Offering</div>
+            
+            </div>
+        
+        </div>
+        
+         <h5><span> #FASHIONFORALL</span></h5>
+        <div class="styletxt">
+            STYLE
+        </div>
+        <div class="bodyimg" >
+        <img src="images/2020-02-11-1-768x512-c-top.jpg">
+           <p> #FASHIONforall:
+             Meet the 7 Canadians Covering Our Groundbreaking New March Issue
+            </p>
+            <br>
+            <div class="undertext">
+        made by TEENMAGAZINE 2020
+        </div>
+        </div>
+        
+        
+        
+       
+        
+    </div>
+   
+    
+    
+    <h4><span> STYLES </span></h4>
+  <div class="big">
+   <div class="box">
+    <div class="imgBx">
+        <img src="images/2.jpg">
+       </div>
+    <div class="content">
+       <h2>Items in Our Fashion Editor’s 
+           Shopping Cart From Local Small Businesses</h2>
+       <p>By Mostafa Negm Date March 20, 2020</p>
+        </div>
+       
+              
+      </div>
+      
+      <hr color="black" style="width: 80%;">
+     
+      <div class="box">
+    <div class="imgBx">
+        <img src="images/3.jpg">
+       </div>
+    <div class="content">
+       <h2>Depending on the style, you may feel comfortable sitting around whith your pajamas</h2>
+       <p>By Mostafa Negm Date March 23, 2020</p>
+        </div>
+       
+              
+      </div>
+      
+      <hr color="black" style="width: 80%;">
+     
+      <div class="box">
+    <div class="imgBx">
+        <img src="images/4.jpg">
+       </div>
+    <div class="content">
+       <h2>French Fashion came with new designes for men
+        and new models </h2>
+       <p>By Maryam Ashraf Date March 24, 2020</p>
+        </div>
+       
+              
+      </div>
+           
+      <hr color="black" style="width: 80%;">
+     
+      <div class="box">
+    <div class="imgBx">
+        <img src="images/5.png">
+       </div>
+    <div class="content">
+       <h2> French new T-Shirts came with new styles and colors and some of them with art hurry up </h2>
+       <p>By Maryam Asharf Date March 24, 2020</p>
+        </div>
+       
+              
+      </div>
+      
+      
+      
+    </div>
+    
+    
+   
+    <br>
+    <br>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ 
+<?php
+     setcookie("user_name", time()+ 860000,'/'); 
+     echo 'the cookie has been set for a day';
+?>
+    
+<?php
+     print_r($_COOKIE);     
+?>
+    
+    
+    
+    
+    <?php
+
+session_start(); //start the PHP_session function 
+
+if(isset($_SESSION['page_count']))
+{
+     $_SESSION['page_count'] += 1;
+}
+else
+{
+     $_SESSION['page_count'] = 1;
+}
+ echo 'You are visitor number ' . $_SESSION['page_count'];
+
+?>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class = "footer">
+        <div class="footer-content">
+            
+        <div class ="footer-section about">
+            <h1 class="logo-text"><span>TEEN </span>MAGAZINE</h1>
+            <p>
+                TEEN MAGAZINE is fashion magazine targting wild youth to feed their hunger for street fashion, viral trends, culture and spread love.
+                
+            </p>
+            <div class="contact">
+            <span><i class="fa fa-phone"></i>&nbsp; 000-111-222-333 </span>
+            <span><i class="fa fa-envelope"></i>&nbsp; info@teenmagazine.com </span>
+            </div>
+            <div class="social">
+            <a href="https://en-gb.facebook.com/"> <i class="fa fa-facebook"></i></a>
+            <a href="#"> <i class="fa fa-instagram"></i></a>
+            <a href="#"> <i class="fa fa-twitter"></i></a>
+            </div>
+            </div>
+            
+        <div class ="footer-section links">
+            <h2>Quick Links</h2>
+            <br>
+            <ul>
+                <a href="homepage.html"><li>Home</li></a>
+                <a href="men.html"><li>MEN</li></a>
+                <a href="women.html"><li>WOMAN</li></a>
+                <a href="sign%20in.html"><li>LOGIN</li></a>
+                <a href="about-us.html"><li>ABOUT US</li></a>
+                <a href="contact-us.html"><li>Contact</li></a>
+            </ul>
+        </div>
+            
+            
+            
+            
+        <div class ="footer-section contact-form">
+        
+            <h2>Contact us</h2>
+            <br>
+            <form action="index.html" method="post">
+            <input type="email" name ="email" class="text-input contact-input" placeholder="your email address...">
+            <textarea name="message" class="text-input contact-input" placeholder="your message..."></textarea>
+                <button type="submit" class="btn btn-big contact-btn">
+                <i class="fa fa-envelope"></i>
+                send
+                </button>
+            </form>
+        </div>
+
+
+        </div>
+        <div class="footer-bottom">
+        &copy; Mostafa,Maryam
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="header.js" async charset="utf-8"></script>
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
